@@ -149,7 +149,7 @@ def select_ammo():
                              "Infinite", command=selected_ammo)
     isCountable.grid(row=4, column=0, padx=10, pady=2, sticky="w")
 
- 
+
 # Function to handle changes in selected ammunition
 def selected_ammo(selected_ammunition):
     global value

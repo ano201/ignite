@@ -30,9 +30,15 @@ def randomSpeicalCharecter():
 
 
 def randomWord():
+<<<<<<< HEAD
     # Generate and return a random word using the 'w' instance of RandomWord
     return w.word()
 
+=======
+    return w.word()
+
+
+>>>>>>> origin/main
 # time.sleep(3)  # Add a delay of seconds
 
 
@@ -40,10 +46,17 @@ def randomWord():
 
 
 # Loop for sending messages
+<<<<<<< HEAD
 # def send():
 
 #     pyautogui.typewrite(":boo")
 #     pyautogui.typewrite("\n")
+=======
+def send():
+
+    pyautogui.typewrite(":boo")
+    pyautogui.typewrite("\n")
+>>>>>>> origin/main
 
     # pyautogui.typewrite("\n")
 
@@ -55,13 +68,18 @@ def randomWord():
 
 
 def ammo(weaponMode, message):
+<<<<<<< HEAD
     # Send a message based on the selected weapon mode.
     if weaponMode == "custom":
         # Send the custom message twice to simulate sending
+=======
+    if weaponMode == "custom":
+>>>>>>> origin/main
         pyautogui.typewrite(message)
         pyautogui.typewrite("\n")
         pyautogui.typewrite("\n")
     elif weaponMode == "randomword":
+<<<<<<< HEAD
         # Send a message composed of random words
         pyautogui.typewrite(
             f"{randomWord()} {randomWord()} {randomWord()} {randomWord()} {randomWord()} \n")
@@ -70,10 +88,18 @@ def ammo(weaponMode, message):
         pyautogui.typewrite(f"{randomCharecter()}\n")
     elif weaponMode == "randomspecialcharacter":
         # Send a message composed of random special characters
+=======
+        pyautogui.typewrite(
+            f"{randomWord()} {randomWord()} {randomWord()} {randomWord()} {randomWord()} \n")
+    elif weaponMode == "randomcharacter":
+        pyautogui.typewrite(f"{randomCharecter()}\n")
+    elif weaponMode == "randomspecialcharacter":
+>>>>>>> origin/main
         pyautogui.typewrite(f"{randomSpeicalCharecter()}\n")
 
 
 def sentUnlimitedMessages(weaponMode, message, value):
+<<<<<<< HEAD
     # Send a specified number of messages based on the selected weapon mode.
     time.sleep(5)
     if value == 0:
@@ -85,6 +111,15 @@ def sentUnlimitedMessages(weaponMode, message, value):
         for i in range(value):
             ammo(weaponMode, message)
     # Press Enter after sending messages
+=======
+    time.sleep(5)
+    if value == 0:
+        while True:
+            ammo(weaponMode, message)
+    else:
+        for i in range(value):
+            ammo(weaponMode, message)
+>>>>>>> origin/main
     pyautogui.press('enter')
 
     # time.sleep(3)
