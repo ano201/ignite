@@ -1,0 +1,7 @@
+# production
+/dist
+
+# build
+/build
+
+main.spec
